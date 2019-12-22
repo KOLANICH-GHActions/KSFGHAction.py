@@ -1,0 +1,13 @@
+name: Kaitai Struct FOrmats GitHub Action
+description: |
+  Lints issues to provide all the needed data.
+author: KOLANICH
+inputs: 
+  github_token:
+    description: "The GITHUB_TOKEN secret"
+runs:
+  using: "node12" # GitHub disallows to use anything other there
+  main: "startBash.js" # ECMA modules are not yet supported by GH Actions
+branding:
+  icon: check-square
+  color: green
